@@ -180,25 +180,23 @@
                     </div>
                 </div>
 
-                <div </div>
-                    <?php
-                    if (isset($_SESSION['data'])) {
-                        echo "<h5 class='text-center mt-5'>No Rekening Hotel</h5>";
-                        echo "<span class='pl-5'>Transfer ke nomor rekening <strong>di bawah ini</strong></span>";
-                        echo "<span class='pl-5'>Dengan mencantumkan <strong>nomor pemesanan</strong></span>";
-                        echo "<div class='card m-4 p-4'>";
-                        echo "<h4>BCA</h4>";
-                        echo "<h5>1234567890</h5>";
-                        echo "</div>";
-                        echo "<div class='card m-4 p-4'>";
-                        echo "<h4>BCA</h4>";
-                        echo "<h5>1234567890</h5>";
-                        echo "</div>";
-                    }
-                    ?>
 
-                </div>
             </div>
+            <div </div>
+                <?php
+                if (isset($_SESSION['data'])) {
+                    echo "<h5 class='text-center mt-5'><strong>No Rekening Asriloka</strong></h5>";
+                    echo "<span class='pl-5'>Transfer ke nomor rekening <strong>di bawah ini</strong></span>";
+                    echo "<span class='pl-5'> dengan mencantumkan <strong>ID pemesanan</strong></span>";
+                    echo "<div class='card m-4 p-4'>";
+                    echo "<h4>Muamalat - An. Nuryadi</h4>";
+                    echo "<h5>7010126818</h5>";
+                    echo "</div>";
+                }
+                ?>
+
+            </div>
+
             <?php require('./admin/inc/scripts.php'); ?>
             <script>
                 $('#uploadBuktiPembayaran').on('show.bs.modal', function (event) {

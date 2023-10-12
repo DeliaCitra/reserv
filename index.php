@@ -74,7 +74,7 @@
         </div>
     </div>
 
-    <!-- Our Room -->
+    <!-- Our Room / Penginapan -->
 
     <h2 class="mt-5 pt-4 mb-4 text-center fw-bold h-font">Penginapan</h2>
     <div class="container">
@@ -173,7 +173,7 @@
                                 <?= number_format($r['price'], 0, ',', '.') ?> / night
                             </h6>
                             <div class="facilities mb-4">
-                                <h6 class="mb-1">Facilities</h6>
+                                <h6 class="mb-1">Fasilitas</h6>
                                 <?php foreach ($r['facility'] as $key => $value): ?>
                                     <span class="badge rounded-pill bg-light text-dark text-wrap">
                                         <?= $value[0]['name'] ?>
@@ -304,39 +304,40 @@
             </div>
             <div class="col-lg-4 col-md-4">
                 <div class="bg-white p-4 rounded mb-4">
-                    <h5>
-                        Call Us
-                    </h5>
-                    <a href="tel: +6281234988894" class="d-inline-block mb-2 text-decoration-none text-dark">
-                        <i class="bi bi-telephone-fill"></i>
-                        +62812-3498-8894
-                    </a>
+                    <h3 class="h-font fw-bold fs-3 mb-2">Asriloka Wonosalam</h3>
+                    <p>Asriloka Wonosalam merupakan salah satu provider outbound terbaik di Wonosalam yang memfokuskan
+                        pelatihan
+                        pengembangan sumber daya manusia dengan program yang bisa disesuaikan dengan permintaan klien.
+                        Kami
+                        memiliki tim dan fasilitator yng sudah profesional dan berpengalaman dalam bidangnya.</p>
                 </div>
                 <div class="bg-white p-4 rounded mb-4">
                     <h5>
-                        Follow Us
+                        Call Us
                     </h5>
-                    <a href="https://www.instagram.com/asriloka.wonosalam/" class="d-inline-block mb-3">
-                        <span class="badge bg-light text-dark fs-6 p-2">
-                            <i class="bi bi-instagram me-1"></i> Instagram
+                    <a href="https://www.instagram.com/asriloka.wonosalam/"
+                        class="d-inline-block text-dark text-decoration-none mb-2">
+                        <span class="badge bg-light rounded-circle text-dark fs-1 p-2">
+                            <i class="bi bi-instagram me-1"></i>
                         </span>
                     </a>
-                    <a href="http://wa.me/+6281234988894" class="d-inline-block mb-3">
-                        <span class="badge bg-light text-dark fs-6 p-2">
-                            <i class="bi bi-whatsapp me-1"></i> WhatsApp
+                    <a href="http://wa.me/+6281234988894" class="d-inline-block text-dark text-decoration-none mb-2">
+                        <span class="badge bg-light rounded-circle text-dark fs-1 p-2">
+                            <i class="bi bi-whatsapp me-1"></i>
                         </span>
                     </a>
                     <a href="https://l.wl.co/l?u=https%3A%2F%2Fyoutube.com%2F%40asrilokawonosalam2111"
-                        class="d-inline-block mb-3">
-                        <span class="badge bg-light text-dark fs-6 p-2">
-                            <i class="bi bi-youtube me-1"></i> Youtube
+                        class="d-inline-block text-dark text-decoration-none mb-2">
+                        <span class="badge bg-light rounded-circle text-dark fs-1 p-2">
+                            <i class="bi bi-youtube me-1"></i>
                         </span>
                     </a>
                     <a href="https://www.tiktok.com/@asriloka.wonosalam?_t=8f9aODQXp5O&_r=1"
-                        class="d-inline-block mb-3">
-                        <span class="badge bg-light text-dark fs-6 p-2">
-                            <i class="bi bi-tiktok me-1"></i> Tiktok
+                        class="d-inline-block text-dark text-decoration-none">
+                        <span class="badge bg-light rounded-circle text-dark fs-1 p-2">
+                            <i class="bi bi-tiktok me-1"></i>
                         </span>
+                    </a>
                     </a>
                 </div>
             </div>
