@@ -126,7 +126,7 @@
             $html .= "<h5 class='mb-3'>$room[name]</h5>";
             $html .= "<p class='mb-3'>$room[description]</p>";
             $html .= "<p class='mb-3'>Rp. $room[price]</p>";
-            $html .= "<p class='mb-3'>Facility :</p>";
+            $html .= "<p class='mb-3'>Fasilitas :</p>";
             $html .= "<ul class='mb-3'>";
             foreach ($facility as $key => $value) {
                 $html .= "<li>$value[name]</li>";
@@ -138,7 +138,7 @@
                 $html .= "<li>$value[description]</li>";
             }
             $html .= "</ul>";
-            $html .= "<p class='mb-3'>Capacity :</p>";
+            $html .= "<p class='mb-3'>Kapasitas :</p>";
             $html .= "<ul class='mb-3'>";
             foreach ($capacity as $key => $value) {
                 $html .= "<li>$value[description]</li>";
@@ -229,13 +229,13 @@
                 $html .= "<h5 class='mb-3'>$bundling[name]</h5>";
                 $html .= "<p class='mb-3'>$bundling[description]</p>";
                 $html .= "<p class='mb-3'>Rp. $bundling[price]</p>";
-                $html .= "<p class='mb-3'>Facility :</p>";
+                $html .= "<p class='mb-3'>Fasilitas :</p>";
                 $html .= "<ul class='mb-3'>";
                 foreach ($facility as $key => $value) {
                     $html .= "<li>$value[name]</li>";
                 }
                 $html .= "</ul>";
-                $html .= "<p class='mb-3'>Rule :</p>";
+                $html .= "<p class='mb-3'>Ketentuan :</p>";
                 $html .= "<ul class='mb-3'>";
                 foreach ($rule as $key => $value) {
                     $html .= "<li>$value[description]</li>";
@@ -409,11 +409,10 @@
                             if (data.sisa != 0) {
                                 html += ` (DP)</span></h5>`;
                                 html += `<h5>Nominal DP : <span class="text-primary">Rp ${data.dp.toLocaleString('id-ID')}</span></h5>`;
-                                html += `<h5 class="text-danger">(PPN 1%)</h5>`;
-                                html += `<h5>Sisa Pembayaran : <span class="text-danger">Rp ${(data.sisa).toLocaleString('id-ID')} (Waktu Check In)</span></h5>`;
+                                html += `<h5>Sisa Pembayaran : <span class="text-danger">Rp ${(data.sisa).toLocaleString('id-ID')} (+PPN 1% Bayar Waktu Check-in)</span></h5>`;
                             } else {
                                 html += "</span></h5>";
-                                html += `<h5>Total Pembayaran :<span class="text-danger"> Rp ${data.total_price.toLocaleString('id-ID')} (PPN 1%) </span> </h5>`;
+                                html += `<h5>Total Pembayaran :<span class="text-danger"> Rp ${data.total_price.toLocaleString('id-ID')} (+PPN 1%) </span> </h5>`;
                             }
                             html += `<button type="submit" class="btn btn-primary">Konfirmasi</button>`;
                             // hidden input

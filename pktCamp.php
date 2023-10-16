@@ -114,7 +114,7 @@
                                 $html .= "<div class='col-md-4 px-lg-3 px-md-3 px-0'>";
                                 $html .= "<h5 class='mb-3'>$value[name]</h5>";
                                 $html .= "<div class='facilities mb-3'>";
-                                $html .= "<h6 class='mb-1'>Fasilitas Kamar</h6>";
+                                $html .= "<h6 class='mb-1'>Fasilitas Khusus</h6>";
                                 foreach ($value['facility'] as $facility) {
                                     $html .= "<span class='badge rounded-pill bg-light text-dark text-wrap'>";
                                     $html .= $facility['name'];

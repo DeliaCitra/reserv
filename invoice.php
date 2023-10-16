@@ -69,7 +69,7 @@ function savePdf()
                     </div>
                     <div class="col-xs-6 text-right">
                         <address>
-                            <strong>Tanggal Order:</strong>
+                            <strong>Tanggal Order :</strong>
                             <?php
                             $now = date('d M Y');
                             echo "<br>$now<br>";
@@ -116,8 +116,8 @@ function savePdf()
                                             $totalDays = (strtotime($checkOut) - strtotime($checkIn)) / (60 * 60 * 24);
                                             $totalPrice = $totalDays * $room['price'];
                                             echo "<td>{$room['name']}</td>";
-                                            echo "<td class='text-center'>" . date('Y-m-d', strtotime($checkIn)) . "</td>";
-                                            echo "<td class='text-center'>" . date('Y-m-d', strtotime($checkOut)) . "</td>";
+                                            echo "<td class='text-center'>" . date('d-m-Y', strtotime($checkIn)) . "</td>";
+                                            echo "<td class='text-center'>" . date('d-m-Y', strtotime($checkOut)) . "</td>";
                                             echo "<td class='text-center'>{$room['price']}</td>";
                                             echo "<td class='text-center'>$totalDays</td>";
                                             echo "<td class='text-right'>$totalPrice</td>";
@@ -128,8 +128,8 @@ function savePdf()
                                             $totalDays = (strtotime($checkOut) - strtotime($checkIn)) / (60 * 60 * 24);
                                             $totalPrice = $totalDays * $bundling['price'];
                                             echo "<td>{$bundling['name']}</td>";
-                                            echo "<td class='text-center'>" . date('Y-m-d', strtotime($checkIn)) . "</td>";
-                                            echo "<td class='text-center'>" . date('Y-m-d', strtotime($checkOut)) . "</td>";
+                                            echo "<td class='text-center'>" . date('d-m-Y', strtotime($checkIn)) . "</td>";
+                                            echo "<td class='text-center'>" . date('d-m-Y', strtotime($checkOut)) . "</td>";
                                             echo "<td class='text-center'>{$bundling['price']}</td>";
                                             echo "<td class='text-center'>$totalDays</td>";
                                             echo "<td class='text-center'>$number_of_people</td>";

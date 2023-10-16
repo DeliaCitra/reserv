@@ -27,7 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_REQUEST['action']) && $_REQ
     if ($check_in > $check_out) {
         echo json_encode([
             'status' => 'failed',
-            'message' => 'Tanggal check in tidak boleh lebih besar dari tanggal check out'
+            'message' => 'Tanggal check-in tidak boleh lebih besar dari tanggal check-out'
         ]);
         die();
     }
@@ -36,7 +36,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_REQUEST['action']) && $_REQ
         if ($check_in >= $booking['checkIn'] && $check_in < $booking['checkOut']) {
             echo json_encode([
                 'status' => 'failed',
-                'message' => 'Kamar sudah dipesan pada tanggal tersebut'
+                'message' => 'Maaf kamar sudah dipesan pada tanggal tersebut'
             ]);
             die();
         }
@@ -44,7 +44,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_REQUEST['action']) && $_REQ
         if ($check_out > $booking['checkIn'] && $check_out <= $booking['checkOut']) {
             echo json_encode([
                 'status' => 'failed',
-                'message' => 'Kamar sudah dipesan pada tanggal tersebut'
+                'message' => 'Maaf kamar sudah dipesan pada tanggal tersebut'
             ]);
             die();
         }
@@ -204,7 +204,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_REQUEST['action']) && $_REQ
 
     redirect("../../pemesanan");
     sleep(3);
-    $_SESSION["sukses"] = 'Segera lakukan pembayaran sebelum tanggal ' . $booking['checkIn'] . ' dengan total harga Rp. ' . $data['total_price'] . ' ke nomor rekening 1234567890 atas nama Asriloka.';
+    $_SESSION["sukses"] = 'Segera lakukan pembayaran sebelum tanggal ' . $booking['checkIn'] . ' dengan total harga Rp. ' . $data['total_price'] . ' ke nomor rekening 7010126818 Bank Muamalat - An. Nuryadi.';
 
 }
 
